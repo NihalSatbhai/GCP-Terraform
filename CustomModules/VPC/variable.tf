@@ -8,38 +8,30 @@ variable "region" {
   type = string
 }
 
-variable "app-public-subnet1-cidr" {
-  type = string
+variable "app-public-subnet-cidrs" {
+  type = list(string)
 }
 
-variable "app-public-subnet2-cidr" {
-  type = string
+variable "app-private-subnet-cidrs" {
+  type = list(string)
 }
 
-variable "app-private-subnet1-cidr" {
-  type = string
+variable "db-private-subnet-cidrs" {
+  type = list(string)
 }
 
-variable "app-private-subnet2-cidr" {
-  type = string
-}
-
-variable "db-private-subnet1-cidr" {
-  type = string
-}
-
-variable "db-private-subnet2-cidr" {
+variable "proxy-subnet-cidr" {
   type = string
 }
 
 variable "public-firewall-ports" {
-  type = list
+  type = list(string)
 }
 
 variable "private-firewall-ports" {
-  type = list
+  type = list(string)
 }
 
 variable "db-firewall-ports" {
-  type = list
+  type = list(string)
 }

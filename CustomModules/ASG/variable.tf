@@ -1,25 +1,25 @@
 variable "family" {
-    type = string 
+  type = string
 }
 
 variable "family-project" {
-    type = string 
+  type = string
 }
 
 variable "zone" {
-    type = string
+  type = string
 }
 
 variable "machine-type" {
-    type = string
+  type = string
 }
 
-variable "subnetwork" {
-    type = string
+variable "private-subnetwork" {
+  type = string
 }
 
 variable "ssh-user" {
-    type = string
+  type = string
 }
 
 variable "metadata-script" {}

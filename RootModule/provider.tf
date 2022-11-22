@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("../Credentials/admin.json")  ## Passing admin.json as authentication source which we generated from service account of GCP
+  credentials = file("../Credentials/admin.json") ## Passing admin.json as authentication source which we generated from service account of GCP
   project     = var.project
   region      = var.region
 }
